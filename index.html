@@ -1,0 +1,115 @@
+<!DOCTYOE html>
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	  <meta name="google-signin-client_id" content="932069900795-hsp7je5s4t547n2vj1u76a15pc0lc2ot.apps.googleusercontent.com">
+  	  <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="script.js"></script>
+<style type="text/css">
+	@keyframes zoomm{
+		from{opacity: 1;}
+		to{opacity: 0;}
+	}
+
+	.g-signin2,#start{
+		margin-top:200px;
+	}
+
+	#cente{
+	
+
+	}
+	#det{
+		position: absolute;
+		top:0;
+		right: 0;
+		display: none;
+	}
+
+	#profileimg{
+		position:relative;
+		float: right;
+		margin: 5 5px;
+	}
+	#email{
+		margin-top: 0;
+		position: relative;
+		float: right;
+		line-height: 55px;
+
+		margin: 0 5px;
+	}
+	#start{
+		display: none;
+	}
+	#signout{
+		display: none;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+#ques{
+		
+		width: 80vw;
+		margin: 0px auto;
+}
+
+	#options{
+		list-style-type: none;
+		padding-left: 50px;
+	}
+	#tim{
+		position: relative;
+		width: 80vw;
+		margin:55px auto;
+		margin-bottom: 0;
+		overflow: hidden;
+	}
+	#timer{
+		float:right;
+	}
+	.radio{
+margin: 20px;
+	}
+.next{
+	margin: 5px;
+	float: right;
+}
+
+</style>
+
+  </head>
+  <body>
+  	<p>Created By Raushan Chaudhary</p>
+  	<div id="det" class="w3-animate-zoom">
+  	<img id="profileimg" src="SDvas" alt="sdf" class="img-circle" width="50px" height="50px">
+  	<p id="email">email id</p>
+</div>
+
+  	<div id="cente" class="w3-animate-zoom">
+  		<div id="tim"></div>
+  		<center>
+  		<div class="g-signin2" data-onsuccess="onSignIn" id="signin"></div>
+  		<button class="btn btn-success" id="start" onclick="start()">Start Test</button>
+  	</center>
+
+<div id="ques">
+</div>
+
+
+
+
+  	</div>
+    
+
+   
+  
+<button class="btn btn-danger w3-animate-zoom" onclick="signout()" id="signout">Sign Out</button>
+  <script type="text/javascript">
+
+
+
+  </script>
+  </body>
+</html>
